@@ -1,1 +1,3 @@
-# SQL_Project
+# SQL
+
+- Create and Insert tables in SQL
