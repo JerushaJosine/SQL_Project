@@ -1,1 +1,56 @@
 
+SELECT DISTINCT(Gender)
+FROM EmployeeDetails
+GROUP BY Gender
+
+SELECT Gender, COUNT(Gender)
+FROM EmployeeDetails
+GROUP BY Gender
+
+
+SELECT *
+FROM EmployeeDetails
+
+SELECT Gender, Age, COUNT(Gender)
+FROM EmployeeDetails
+GROUP BY Gender, Age
+- It showa all the male and female age and gender and count 
+
+SELECT Gender, Age, COUNT(Gender)
+FROM EmployeeDetails
+WHERE Age > 32
+GROUP BY Gender, Age
+
+
+SELECT Gender, COUNT(Gender) As CountGender
+FROM EmployeeDetails
+WHERE Age > 31
+GROUP BY Gender
+ORDER BY CountGender ASC 
+- Ascending order
+
+
+SELECT Gender, COUNT(Gender) As CountGender
+FROM EmployeeDetails
+WHERE Age > 31
+GROUP BY Gender
+ORDER BY CountGender DESC
+- Descending order
+
+SELECT Gender, COUNT(Gender) As CountGender
+FROM EmployeeDetails
+WHERE Age > 31
+GROUP BY Gender
+ORDER BY Gender 
+
+SELECT *
+FROM EmployeeDetails
+ORDER BY Age DESC, Gender DESC
+
+
+
+SELECT *
+FROM EmployeeDetails
+ORDER BY 4 DESC, 5 DESC
+- We can use the column no.s to indicate 
+
