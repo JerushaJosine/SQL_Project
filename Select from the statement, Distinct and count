@@ -1,1 +1,35 @@
 
+SELECT *
+FROM EmployeeDemographics 
+- It shows the complete table
+
+SELECT FirstName
+FROM EmplyeeDemocradics
+- Shows all the First Names
+
+SELECT FirstName, LastName
+FROM EmployeeDemographics 
+-Shows all the first and last names
+
+SELECT DISTINCT(EmplyeeID)
+FROM EmployeeDemographics 
+- DISTINCT is used for a specific or unique values.
+
+SELECT COUNT(LastName) As LastNameCount
+FROM EmployeeDemographics 
+- It shows the total count of lastnames (all columns)
+- and gives the column name as LastNameCount
+
+SELECT MAX(Salary)
+FROM EmployeeSalary 
+-It shows the maximum salary of the employee
+
+SELECT MIN(Salary)
+FROM EmployeeSalary 
+
+SELECT AVG(Salary)
+FROM EmployeeSalary 
+
+For running the same code in "Master"
+SELECT *
+FROM database1.dbo.EmployeeSalary
