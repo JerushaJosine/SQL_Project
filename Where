@@ -1,1 +1,43 @@
 
+SELECT *
+FROM EmployeeDetails
+WHERE FirstName = 'Jerusha'
+
+SELECT *
+FROM EmployeeDetails
+WHERE FirstName <> 'Jerusha'
+- doesnot equals to Jerusha
+
+SELECT *
+FROM EmployeeDetails
+WHERE Age > 30
+
+SELECT *
+FROM EmployeeDetails
+WHERE Age < 32
+
+SELECT *
+FROM EmployeeDetails
+WHERE Age <= 32
+
+SELECT *
+FROM EmployeeDetails
+WHERE Age <= 32 AND Gender = 'Male'
+
+SELECT *
+FROM EmployeeDetails
+WHERE Age <= 32 OR Gender = 'Male'
+
+SELECT *
+FROM EmployeeDetails
+WHERE LastName LIKE 'S%'
+- it showa the lastname starting with S
+
+SELECT *
+FROM EmployeeDetails
+WHERE LastName LIKE '%S%'
+- It shows all the names which showa S in anywhere in their lastname
+
+SELECT *
+FROM EmployeeDetails
+WHERE LastName LIKE 'S%o%'
