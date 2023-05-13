@@ -23,3 +23,7 @@ Left Outer Join database1.dbo.EmployeeSalary
     ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
 - Left take is the first table that we use
   
+SELECT EmployeeDetails.EmployeeID, FirstName, LastName, JobTitle, Salary
+FROM database1.dbo.EmployeeDetails
+RIGHT Outer Join database1.dbo.EmployeeSalary
+    ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
