@@ -1,3 +1,3 @@
 # SQL
 
-- Create and Insert tables in SQL
+All the code or documents related to SQL in this repo.
