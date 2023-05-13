@@ -27,3 +27,20 @@ SELECT EmployeeDetails.EmployeeID, FirstName, LastName, JobTitle, Salary
 FROM database1.dbo.EmployeeDetails
 RIGHT Outer Join database1.dbo.EmployeeSalary
     ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+
+
+SELECT EmployeeDetails.EmployeeID, FirstName, LastName, Salary
+FROM database1.dbo.EmployeeDetails
+Inner Join database1.dbo.EmployeeSalary
+    ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+WHERE FIrstName <> 'Michael'
+ORDER BY Salary DESC 
+- To check the highest paid job otherthan Michael
+
+- Average Salary for the sales
+SELECT JobTitle, AVG(Salary)
+FROM database1.dbo.EmployeeDetails
+Inner Join database1.dbo.EmployeeSalary
+    ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+WHERE JobTitle = 'Salesman'
+GROUP BY JobTitle
