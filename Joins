@@ -1,1 +1,25 @@
 
+Join is used to combain multiple tables in a simgle project
+
+SELECT *
+FROM database1.dbo.EmployeeDetails
+
+SELECT *
+FROM database1.dbo.EmployeeSalary
+
+SELECT *
+FROM database1.dbo.EmployeeDetails
+Inner Join database1.dbo.EmployeeSalary
+	ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+  
+ SELECT *
+FROM database1.dbo.EmployeeDetails
+FULL Outer Join database1.dbo.EmployeeSalary
+	ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+  - It showa the data present in both the tables combines even if one of the table doesn't have values
+SELECT *
+FROM database1.dbo.EmployeeDetails
+Left Outer Join database1.dbo.EmployeeSalary
+    ON EmployeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+- Left take is the first table that we use
+  
