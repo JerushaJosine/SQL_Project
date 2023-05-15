@@ -2,3 +2,20 @@
 # CASE STATEMENT
 
 A case statement allows us to specify condition and it also allows us to specify what we want to return when the condition is met. 
+
+SELECT FirstName, LastName, Age,
+CASE 
+	WHEN Age = 38 THEN 'Stanley'
+	WHEN Age > 30 THEN 'OLD'
+	WHEN Age BETWEEN 27 AND 30 THEN 'YOUNG'
+	ELSE 'BABY'
+END
+FROM database1.dbo.EmployeeDetails
+WHERE Age is NOT NULL
+ORDER BY Age
+
+-- we can use this to specify the particular cell.
+-- In this example I used FirstName, LastName, Age
+-- When Age = 38 , print 'Stanley' the name
+-- When Age > 30 , Print 'OLD'
+-- When Age is BETWEEn 27 AND 30 THEN 'YOUNG'
