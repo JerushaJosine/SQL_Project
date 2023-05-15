@@ -46,6 +46,13 @@ SELECT *
 FROM database1.dbo.WareHouseEmployeeDemographics
 
 
+-- Just check another table values
+SELECT EmployeeID, FirstName, Age
+FROM database1.dbo.EmployeeDetails
+UNION
+SELECT EmployeeID, JobTitle, Salary
+FROM database1.dbo.EmployeeSalary
+ORDER by EmployeeID
 
-
+--- It will still showa the output because the table coulmns are the same in this tables
 __
