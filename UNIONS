@@ -55,4 +55,4 @@ FROM database1.dbo.EmployeeSalary
 ORDER by EmployeeID
 
 --- It will still showa the output because the table coulmns are the same in this tables
-__
+__but the age and salary are showing in the same column. So, check the values are same in both tables.
