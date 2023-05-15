@@ -35,3 +35,15 @@ FROM database1.dbo.WareHouseEmployeeDemographics
 
 -- just add union it will show the two seperate columns into one complete table
 -- It also removes the duplicates as a distinct statement
+
+--UNION ALL
+SELECT *
+FROM database1.dbo.EmployeeDetails
+UNION ALL
+SELECT *
+FROM database1.dbo.WareHouseEmployeeDemographics
+
+
+
+
+__
