@@ -19,3 +19,12 @@ ORDER BY Age
 -- When Age = 38 , print 'Stanley' the name
 -- When Age > 30 , Print 'OLD'
 -- When Age is BETWEEn 27 AND 30 THEN 'YOUNG'
+
+
+
+SELECT FirstName, LastName, JobTitle, Salary
+FROM database1.dbo.EmployeeDetails
+JOIN database1.dbo.EmployeeSalary
+	ON employeeDetails.EmployeeID = EmployeeSalary.EmployeeID
+	
+-- JOIN two tables Employee
