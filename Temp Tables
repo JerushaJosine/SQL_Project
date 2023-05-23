@@ -34,3 +34,4 @@ FROM #Temp_Employee2
 
 /* if it is exists it will delete the table and allow us to create a new one */
 DROP TABLE IF EXISTS #Temp_Employee2 
+
