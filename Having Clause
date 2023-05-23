@@ -20,7 +20,7 @@ GROUP BY JobTitle
 Having COUNT(jobTitle) > 1
 
 
-/* Average Salary*/
+/* Average Salary oh jobtitle  greaterthan 45000*/
 
 SELECT JobTitle, AVG(Salary)
 FROM database1.dbo.EmployeeDetails
