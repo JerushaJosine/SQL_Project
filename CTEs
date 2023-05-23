@@ -1,3 +1,19 @@
 
 # Common Table Expresstion
 -- It is used to manipulate the subquery data.
+-- CTE is created in a memory ratherthan a tempdb file or like a tamp table
+-- It acts like a subsquery
+
+/* CTEs */
+
+WITH CTE_Employee as  
+(SELECT FirstName, LastName, Gender, Salary,
+COUNT(gender) OVER (PARTITION by gender) as TotalGender
+, AVG(Salary) OVER (PARTITION bY Gender) as AvgSalary
+FROM database1..EmployeeDetails emp
+JOIN database1..EmployeeSalary sal
+	ON emp.EmployeeID = sal.EmployeeID
+WHERE Salary > '45000' 
+)
+SELECT *
+FROM CTE_Employee
