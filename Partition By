@@ -1,1 +1,4 @@
-
+SELECT *
+FROM database1..EmployeeDetails dem
+JOIN database1..EmployeeSalary sal
+	ON dem.EmployeeID = sal.EmployeeID
