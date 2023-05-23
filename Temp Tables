@@ -5,3 +5,9 @@ EmployeeID int,
 JobTitle Varchar(100),
 Salary int
 )
+
+/* we dont have to enter the data manually, insted we can just select the data from a particular table */
+
+INSERT INTO #temp_Employee
+SELECT *
+FROM database1..EmployeeSalary
