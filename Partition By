@@ -2,3 +2,12 @@ SELECT *
 FROM database1..EmployeeDetails dem
 JOIN database1..EmployeeSalary sal
 	ON dem.EmployeeID = sal.EmployeeID
+
+
+/* partition statement*/
+
+SELECT FIrstName, LastName, Gender, Salary,
+	Count (Gender) OVER (PARTITION BY Gender) as TotalGender
+FROM database1..EmployeeDetails dem
+JOIN database1..EmployeeSalary sal
+	ON dem.EmployeeID = sal.EmployeeID
