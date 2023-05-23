@@ -11,3 +11,6 @@ SELECT FirstName + ' ' + LastName AS FullName
 FROM [database1].[dbo].[EmployeeDetails]
 
 /* Aggregate Function*/
+SELECT Avg(Age) AS AvgAge
+FROM [database1].[dbo].EmployeeDetails
+
