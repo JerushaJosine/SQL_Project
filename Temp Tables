@@ -1,1 +1,7 @@
 
+# create a table using # the only difference between the regular table and temp table is #(pound) symbol.
+CREATE TABLE #temp_Employee (
+EmployeeID int,
+JobTitle Varchar(100),
+Salary int
+)
