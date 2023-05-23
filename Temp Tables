@@ -27,3 +27,7 @@ join database1..EmployeeSalary sal
 	ON emp.EmployeeID = sal.EmployeeID
 group by JobTitle
 
+
+/* for temp_employee2 we don't have to run the entire code */
+SELECT * 
+FROM #Temp_Employee2
