@@ -1,9 +1,18 @@
 
-/* select employeeid and from a database and update the specific employee first name and last name *?
+/* selectthe database and update the specific employee first name and last name *?
 
 SELECT * 
 FROM database1.dbo.EmployeeDetails
 
 UPDATE database1.dbo.EmployeeDetails
 SET EmployeeID = 1012
+WHERE FirstName = 'Holly' AND LastName = 'Flex'
+
+
+/* select the database and update the age and gender */
+SELECT * 
+FROM database1.dbo.EmployeeDetails
+
+UPDATE database1.dbo.EmployeeDetails
+SET Age = 31, Gender = 'Female'
 WHERE FirstName = 'Holly' AND LastName = 'Flex'
