@@ -16,3 +16,21 @@ FROM database1.dbo.EmployeeDetails
 UPDATE database1.dbo.EmployeeDetails
 SET Age = 31, Gender = 'Female'
 WHERE FirstName = 'Holly' AND LastName = 'Flex'
+
+
+/* delete the information */
+SELECT *
+FROM database1.dbo.EmployeeDetails
+
+DELETE FROM database1.dbo.EmployeeDetails 
+Where EmployeeID = 1013
+
+
+/* to see thich infromation is deleted specifically */
+/* once the data is removed it cannot be retrived*/
+SELECT *
+FROM database1.dbo.EmployeeDetails
+WHERE EmployeeID = 1013
+
+/* we can see a specific column is removed from the table */
+
