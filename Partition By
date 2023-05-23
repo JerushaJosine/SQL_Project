@@ -13,11 +13,16 @@ JOIN database1..EmployeeSalary sal
 	ON dem.EmployeeID = sal.EmployeeID
 
 
-# Group By Function
+-- Group By Function
 SELECT FirstName, LastName, Gender, Salary, COUNT (Gender)
 FROM database1..EmployeeDetails dem
 JOIN database1..EmployeeSalary sal
 	ON dem.EmployeeID = sal.EmployeeID
 GROUP BY FirstName, LastName, Gender, Salary
 
-
+-- To check the Aggregation function 
+SELECT Gender,COUNT (Gender)
+FROM database1..EmployeeDetails dem
+JOIN database1..EmployeeSalary sal
+	ON dem.EmployeeID = sal.EmployeeID
+GROUP BY  Gender
