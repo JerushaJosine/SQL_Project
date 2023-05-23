@@ -1,1 +1,6 @@
 
+/* ALIASING */
+/* select the firsname as Fname*/ /* it can also work without AS */
+
+SELECT FirstName AS Fname
+FROM [database1].[dbo].[EmployeeDetails]
