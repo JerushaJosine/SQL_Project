@@ -4,3 +4,8 @@
 
 SELECT FirstName AS Fname
 FROM [database1].[dbo].[EmployeeDetails]
+
+
+/* to give the column name to understand the large joins */
+SELECT FirstName + ' ' + LastName AS FullName
+FROM [database1].[dbo].[EmployeeDetails]
