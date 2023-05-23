@@ -10,7 +10,8 @@ FROM [database1].[dbo].[EmployeeDetails]
 SELECT FirstName + ' ' + LastName AS FullName
 FROM [database1].[dbo].[EmployeeDetails]
 
-/* Aggregate Function*/
+/* Aggregate Function in column names*/
 SELECT Avg(Age) AS AvgAge
 FROM [database1].[dbo].EmployeeDetails
 
+/* Aggregate Function in row names*/
