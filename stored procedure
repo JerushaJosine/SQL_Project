@@ -1,1 +1,8 @@
 
+# A stored procedures can accept input parameters.
+# It reduces network traffing and increase the performance.
+
+CREATE PROCEDURE TEST
+AS
+SELECT *
+FROM EmployeeDetails
