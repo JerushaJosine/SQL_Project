@@ -11,3 +11,13 @@ SELECT FIrstName, LastName, Gender, Salary,
 FROM database1..EmployeeDetails dem
 JOIN database1..EmployeeSalary sal
 	ON dem.EmployeeID = sal.EmployeeID
+
+
+# Group By Function
+SELECT FirstName, LastName, Gender, Salary, COUNT (Gender)
+FROM database1..EmployeeDetails dem
+JOIN database1..EmployeeSalary sal
+	ON dem.EmployeeID = sal.EmployeeID
+GROUP BY FirstName, LastName, Gender, Salary
+
+
