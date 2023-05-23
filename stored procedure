@@ -34,3 +34,32 @@ select *
 from #temp_employee1
 
 exec Temp_Employee1
+
+
+---Parameters
+CREATE PROCEDURE Temp_Employee1
+@JobTitle nvarchar(100)
+AS 
+Create table #temp_employee1 (
+JobTitle varchar(100),
+EmployeePerJob int,
+AvgAge int,
+AvgSalary int
+)
+
+INSERT into #temp_employee1
+SELECT JobTitle, Count(JobTitle), Avg(Age), Avg(Salary)
+FROM database1..EmployeeDetails emp
+JOIN database1..EmployeeSalary sal
+	ON emp.EmployeeID = sal.EmployeeID
+where JobTitle = @JobTitle
+group by JobTitle
+
+Select *
+from #temp_employee1
+
+
+select *
+from #temp_employee1
+
+exec Temp_Employee1 @jobTitle = 'Salesman'
