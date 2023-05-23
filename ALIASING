@@ -14,4 +14,17 @@ FROM [database1].[dbo].[EmployeeDetails]
 SELECT Avg(Age) AS AvgAge
 FROM [database1].[dbo].EmployeeDetails
 
-/* Aggregate Function in row names*/
+/* When we ALiase a table name use select statement and prefix a column name with tablename  */
+SELECT Demo.EmployeeID
+FROM [database1].[dbo].[EmployeeDetails] AS Demo
+JOIN [database1].[dbo].[EmployeeSalary] AS Sal
+	ON Demo.EmployeeID = Sal.EmployeeID
+  
+  
+  /* Multiple Joins*/
+ SELECT Demo.EmployeeID, Demo.FirstName, Demo.LastName, Sal.Jobtitle, Ware.Age
+FROM [database1].[dbo].[EmployeeDetails]  Demo
+JOIN [database1].[dbo].[EmployeeSalary] Sal
+	ON Demo.EmployeeID = Sal.EmployeeID
+LEFT JOIN [database1].[dbo].WareHouseEmployeeDemographics Ware
+	ON Demo.EmployeeID = Ware.EmployeeID
